@@ -1,8 +1,8 @@
 def char_to_binary(msg):
     """
-    Function converts a type 'str' message into a base 2 integer, by converting
-    each character and space into an 8 bit binary decimal, combining them into
-    one large string, and converting this decimal into a base 2 integer
+    Function converts the message into a number, using ASCII in the natural way
+    E.g. (for “A b”: in ASCII, A = 65, space = 32, and b = 98; translating each
+    number into 8 bits gives “A b” = 010000010010000001100010 in binary.)
     @param msg : type 'str' message to convert
     @return : base 2 'int'
     """
