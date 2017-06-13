@@ -1,8 +1,8 @@
 def char_to_binary(msg):
     """
     Function converts the message into a number, using ASCII in the natural way
-    E.g. (for “A b”: in ASCII, A = 65, space = 32, and b = 98; translating each
-    number into 8 bits gives “A b” = 010000010010000001100010 in binary.)
+    E.g. (for "A b": in ASCII, A = 65, space = 32, and b = 98; translating each
+    number into 8 bits gives "A b" = 010000010010000001100010 in binary.)
     @param msg : type 'str' message to convert
     @return : base 2 'int'
     """
@@ -47,8 +47,8 @@ def rsa_encode(n, e, msg):
     print 'Encoded message:', modular_exponentiation(x, e, n)
 
 
-n = 46947848749720430529628739081
-e = 37267486263679235062064536973
-msg = 'Give me an A'
-
-rsa_encode(n, e, msg)
+if __name__ == '__main__':
+    n = 46947848749720430529628739081
+    e = 37267486263679235062064536973
+    msg = 'Give me an A'
+    rsa_encode(n, e, msg)
